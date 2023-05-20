@@ -1,0 +1,54 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <!-- <link rel="stylesheet" href="fonts/thsarabunnew.css" /> -->
+    <!-- <link rel="stylesheet" href="{% static 'thsarabunnew.css' %}"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun&display=swap" rel="stylesheet">
+    
+    <title>test</title>
+</head>
+
+<body>
+    <div class="headerCon">
+        <div class="txt" id="boardIn">ขาเข้า</div>
+        <div class="txt" id="station_name">สถานีขนส่งผู้โดยสารจังหวัดนครราชสีมา แห่งที่ 1</div>
+        <div class="txt" id="clock"></div>
+    </div>
+    <div class="tableCon" id="tableTH">
+        <div id="tableHead">
+
+        </div>
+        <div id="tableData">
+
+        </div>
+    </div>
+    <div class="footerCon">
+        <!-- <div class="new">
+            <p>ข้อมูลเมื่อ<span id="new_update"> 13:12</span></p>
+        </div> -->
+        <div class="newtxt">
+            <!-- <marquee behavior='scroll' direction='left' scrollamount='10'>
+                <p id="news"></p>
+                
+            </marquee> -->
+
+            <marquee behavior='scroll'  direction='left' scrollamount='10'><p id="news"></p></marquee>
+        </div>
+    </div>
+</body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="{% static 'script.js' %}""></script>
+
+</html>
